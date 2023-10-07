@@ -1,0 +1,8 @@
+Flask
+Flask-Migrate
+
+# environment
+python-dotenv
+
+# postgres dependencies
+psycopg2-binary

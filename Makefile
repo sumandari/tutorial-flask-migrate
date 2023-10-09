@@ -31,8 +31,7 @@ db-run: ## Run database container.
 
 setup-env: ## Create environment and install dependencies
 	# You can also use Pipfile if you want to.
-	python3 -m venv .venv && source .venv/bin/activate
-	pip install --upgrade pip && pip install -r requirements.txt
+	python3 -m venv .venv && source .venv/bin/activate && pip install --upgrade pip && pip install -r requirements.txt
 
 migration-init: ## Initialise the migration with Flask_Migrate
 	flask db init
